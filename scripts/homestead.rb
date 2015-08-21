@@ -13,8 +13,8 @@ class Homestead
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
 
     config.vm.provider "docker" do |d|
-      d.build_dir = "."
-      d.has_ssh = true
+        d.image = 'stevijo/homestead-docker'
+        d.has_ssh = true
     end
 
     # Standardize Ports Naming Schema
