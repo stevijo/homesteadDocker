@@ -11,6 +11,10 @@
         {
             "name": "Taylor Otwell",
             "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "Stefan Mayer",
+            "email": "stevijo.mayer@gmail.com"
         }
     ],
     "autoload": {
