@@ -1,6 +1,6 @@
 {
-    "name": "laravel/homestead",
-    "description": "A virtual machine for web artisans.",
+    "name": "stevijo/homestead-docker",
+    "description": "Fork of laravel/homestead using docker",
     "require": {
         "php": ">=5.4",
         "symfony/console": "~2.0",
@@ -11,6 +11,10 @@
         {
             "name": "Taylor Otwell",
             "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "Stefan Mayer",
+            "email": "stevijo.mayer@gmail.com"
         }
     ],
     "autoload": {
