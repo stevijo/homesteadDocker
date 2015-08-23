@@ -51,8 +51,10 @@ block="server {
     ssl_certificate_key /etc/nginx/ssl/$1.key;
 }
 "
-
-echo "$block" > "/etc/nginx/sites-available/$1"
+if [ ! -e /etc/nginx/sites-available/$1 ]; then
+    echo "$block" > "/etc/nginx/sites-available/$1"
+fi
 ln -fs "/etc/nginx/sites-available/$1" "/etc/nginx/sites-enabled/$1"
 service nginx restart
 service php5-fpm restart
+

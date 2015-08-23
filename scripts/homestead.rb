@@ -83,12 +83,6 @@ class Homestead
       end
     end
 
-    # Install All The Configured Nginx Sites
-    config.vm.provision "shell" do |s|
-        s.path = scriptDir + "/clear-nginx.sh"
-    end
-
-
     settings["sites"].each do |site|
       config.vm.provision "shell" do |s|
           if (site.has_key?("hhvm") && site["hhvm"])
