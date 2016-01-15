@@ -1,25 +1,26 @@
 {
-    "name": "stevijo/homestead-docker",
-    "description": "Fork of laravel/homestead using docker",
+    "name": "laravel/homestead",
+    "description": "A virtual machine for web artisans.",
     "require": {
-        "php": ">=5.4",
-        "symfony/console": "~2.0",
-        "symfony/process": "~2.0"
+        "php": ">=5.5.9",
+        "symfony/console": "~2.3|~3.0",
+        "symfony/process": "~2.3|~3.0"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Taylor Otwell",
             "email": "taylorotwell@gmail.com"
-        },
-    	{
-    	    "name": "Stefan Mayer",
-    	    "email": "stevijo.mayer@gmail.com"
-    	}
+        }
     ],
     "autoload": {
         "psr-4": {
             "Laravel\\Homestead\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "4.0-dev"
         }
     },
     "bin": [
