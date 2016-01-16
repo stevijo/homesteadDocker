@@ -13,7 +13,7 @@ class Homestead
     config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"
 
     config.vm.provider "docker" do |d|
-        d.image = 'stevijo/homestead-docker:latest'
+        d.image = 'stevijo/homestead-docker:v1.0'
         d.has_ssh = true
     end
 
